@@ -25,6 +25,7 @@ Thumbs.db
 #Build systems#
 node_modules/
 bower_components/
+public/components/
 .sass-cache
 *.css.map
 build/
