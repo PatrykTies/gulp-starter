@@ -6,14 +6,194 @@
  * Made By MaterializeCSS.com
  */
 body{
-  background-image: url('../img/landing.jpg');
-
+  font-size: 16px;
+  
 }
+
+h1{
+  font-size: 3em;
+}
+h1,h2{
+  margin: 0 0 40px;
+}
+.telefon{
+  color : red;
+}
+#hero{
+  background: url('../img/landing.jpg') no-repeat;
+  background-size: 100% auto;
+  min-height: 500px;
+}
+#tarot{
+  background-image: url('../img/tarot.jpg');
+  background-attachment: fixed;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+#wahadlo{
+  background-image: url('../img/stol.jpg');
+  background-attachment: fixed;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+#numerologia{
+  background-image: url('../img/planety.jpg');
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.karta{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  opacity: 0.75;
+}
+/*================================================================BLOG CSS=======*/
+#blog-header{
+  background-image: url('../img/background3.jpg');
+  background-attachment: fixed;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+.page-title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+.post {
+  position: relative;
+  border: solid 1px #ddd;
+  background: #f0f4c3;
+  margin: 0 0 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.widget {
+  position: relative;
+  border: solid 1px #ddd;
+  background: #f0f4c3;
+  margin: 0 0 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt{
+  padding: 20px;
+}
+.post header h3,
+.post header h1{
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: solid 1px #ddd;
+}
+.post header h1 {
+  font-size: 24px;
+}
+.post-image{
+  height: auto;
+}
+.post-details{
+  font-size: 12px;
+  width: 90%;
+}
+.post-details i {
+  padding-left: 10px;
+}
+.post-details i:first-child{
+  padding-left: 0px;
+}
+/*================================================================BLOG WIDGETS CSS=======*/
+.widget h4{
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: solid 1px #ddd;
+}
+.widget ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget ul li{
+  margin: 0 0 5px;
+}
+.widget ul li:hover{
+  position: relative;
+  right: 2px;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="search"],
+input[type="search"],
+textarea{
+  color: #666;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -wmoz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+/*================================================================BLOG COMMENTS CSS=======*/
+.post-comments{
+  height: 50px;
+  width: 50px;
+  
+  float: right;
+  top: 20px;
+  border: none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #79b044;
+  text-align: center;
+  display: table;
+}
+.post-comments a{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+}
+.post-comments i{
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  margin-bottom: 1px;
+}
+.post-comments:hover{
+  background-color: #8bc653;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
-
+a{
+  color: orange;
+}
 
 p {
   line-height: 2rem;
