@@ -7,12 +7,12 @@ angular
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'views/bodyhome.html',
+        templateUrl: 'views/home.html',
         controller: 'homeCtrl as home'
       })
-      .state('about', {
-        url: '/about',
-        templateUrl: 'views/about.html',
-        controller: 'aboutCtrl as about'
+      .state('create', {
+        url: '/create',
+        templateUrl: 'views/create.html',
+        controller: 'createCtrl as create'
       });
   }]);
