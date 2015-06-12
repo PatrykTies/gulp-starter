@@ -1,8 +1,6 @@
-angular
-  .module('myapp', [
-    'ui.router'
-  ])
-  .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+var app = angular.module('myapp', ['ui.router','ngAnimate']);
+
+app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('home', {
@@ -10,9 +8,22 @@ angular
         templateUrl: 'views/home.html',
         controller: 'homeCtrl as home'
       })
-      .state('create', {
-        url: '/create',
-        templateUrl: 'views/create.html',
-        controller: 'createCtrl as create'
+      .state('play', {
+        url: '/play',
+        templateUrl: 'views/play.html',
+        controller: 'playCtrl as play'
       });
-  }]);
+}]);
+
+app.factory('Quiz', function(){
+  var data =[
+      {q:'Jestes gotowy/a ?',a:'tak'},
+      {q:'2+2?',a:'4'}
+    ];
+  return {
+    getData: function(){
+      return data;
+    }
+  }
+});
+

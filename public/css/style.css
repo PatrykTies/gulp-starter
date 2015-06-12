@@ -6,3 +6,275 @@ body {
 /* line 1, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_typography.scss */
 h5 {
   color: black; }
+
+/*.ng-enter, .ng-leave.ng-leave-active{
+	opacity:0;
+}
+.ng-leave, .ng-enter.ng-enter-active{
+	opacity: 1;
+}
+.ng-enter{
+	transition: 1s all;
+}
+
+.ng-leave{
+	transition: .5s all;
+}
+*/
+/* line 15, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.flip {
+  -webkit-transition: .5s;
+          transition: .5s;
+  margin-top: 0; }
+
+/* line 19, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.flip-add {
+  margin-top: -50%; }
+
+/* ANIMATIONS
+============================================================================= */
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@-webkit-keyframes rotateFall {
+  /* line 30, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+
+  /* line 31, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  20% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+
+  /* line 32, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  40% {
+    -webkit-transform: rotateZ(17deg);
+            transform: rotateZ(17deg); }
+
+  /* line 33, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  60% {
+    -webkit-transform: rotateZ(16deg);
+            transform: rotateZ(16deg); }
+
+  /* line 34, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg);
+            transform: translateY(100%) rotateZ(17deg); } }
+@keyframes rotateFall {
+  /* line 30, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+
+  /* line 31, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  20% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+
+  /* line 32, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  40% {
+    -webkit-transform: rotateZ(17deg);
+            transform: rotateZ(17deg); }
+
+  /* line 33, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  60% {
+    -webkit-transform: rotateZ(16deg);
+            transform: rotateZ(16deg); }
+
+  /* line 34, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg);
+            transform: translateY(100%) rotateZ(17deg); } }
+
+/* slide in from the bottom */
+@-webkit-keyframes slideOutLeft {
+  /* line 40, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+@keyframes slideOutLeft {
+  /* line 40, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+/* rotate out newspaper */
+@-webkit-keyframes rotateOutNewspaper {
+  /* line 45, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+            transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+@keyframes rotateOutNewspaper {
+  /* line 45, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+            transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+
+@-webkit-keyframes rotateMove {
+  /* line 49, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(200px) translateX(400px) rotateZ(360deg);
+            transform: translateY(200px) translateX(400px) rotateZ(360deg); } }
+
+@keyframes rotateMove {
+  /* line 49, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(200px) translateX(400px) rotateZ(360deg);
+            transform: translateY(200px) translateX(400px) rotateZ(360deg); } }
+
+@-webkit-keyframes rotateMoveback {
+  /* line 53, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(-200px) translateX(-400px) rotateZ(360deg);
+            transform: translateY(-200px) translateX(-400px) rotateZ(360deg); } }
+
+@keyframes rotateMoveback {
+  /* line 53, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(-200px) translateX(-400px) rotateZ(360deg);
+            transform: translateY(-200px) translateX(-400px) rotateZ(360deg); } }
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@-webkit-keyframes scaleUp {
+  /* line 59, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8); } }
+@keyframes scaleUp {
+  /* line 59, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8); } }
+
+/* slide in from the right */
+@-webkit-keyframes slideInRight {
+  /* line 64, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+
+  /* line 65, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+@keyframes slideInRight {
+  /* line 64, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+
+  /* line 65, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+/* slide in from the bottom */
+@-webkit-keyframes slideInUp {
+  /* line 70, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%); }
+
+  /* line 71, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@keyframes slideInUp {
+  /* line 70, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%); }
+
+  /* line 71, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+/* line 74, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.ng-enter {
+  z-index: 8888; }
+
+/* line 75, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.ng-leave {
+  z-index: 9999; }
+
+/* page specific animations ------------------------ */
+/* home -------------------------- */
+/* line 80, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-home.ng-enter {
+  -webkit-animation: scaleUp 0.5s both ease-in;
+          animation: scaleUp 0.5s both ease-in; }
+
+/* line 81, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-home.ng-leave {
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+          animation: rotateFall 1s both ease-in; }
+
+/* line 83, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-home .fly {
+  -webkit-animation: rotateMove 1s both;
+          animation: rotateMove 1s both; }
+
+/* line 84, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-play .fly {
+  -webkit-animation: rotateMoveback 1s both;
+          animation: rotateMoveback 1s both; }
+
+/* about ------------------------ MAKING PROBLEMS ON TABLET*/
+/* line 87, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-play.ng-enter {
+  -webkit-animation: scaleUp 0.9s both ease-in;
+          animation: scaleUp 0.9s both ease-in; }
+
+/* line 89, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_nganimations.scss */
+.page-play.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease-in;
+          animation: slideOutLeft 0.5s both ease-in; }
+
+/* line 1, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_sections.scss */
+footer {
+  position: fixed;
+  top: 80%;
+  min-width: 100%; }
+
+/* line 1, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_views.scss */
+.page {
+  bottom: 0;
+  padding-top: 100px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  margin-top: 60px;
+  margin-bottom: 8%;
+  width: 100%;
+  min-width: 100%; }
+
+/* line 14, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_views.scss */
+.page h1 {
+  font-size: 60px; }
+
+/* line 15, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_views.scss */
+.page a {
+  margin-top: 50px; }
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+/* line 19, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_views.scss */
+.page-home {
+  background: #00D0BC;
+  color: #00907c; }
+
+/* line 20, c:/Users/WebApps/Desktop/PROBITREC/WebApp1.0/public/scss/_views.scss */
+.page-play {
+  background: #E59400;
+  color: #a55400; }
